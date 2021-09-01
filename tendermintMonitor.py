@@ -4,8 +4,8 @@ from datetime import datetime
 args = argparse.ArgumentParser(description='Available Command')
 args.add_argument('start', nargs='?', help='run realtime bot monitoring')
 args.add_argument('install', nargs='?', help='install this awesome tool')
-args.add_argument('--cmd', default='3030', required=True, help='snarkos rpc port (default: 3030)')
-args.add_argument('--port', default='127.0.0.1', required=True, type=int, help='snarkos ip (default: 127.0.0.1) ONLY ON STATUS ARGUMENT')
+args.add_argument('--cmd', default='3030', required=True, help='tendermint command')
+args.add_argument('--port', default='127.0.0.1', required=True, type=int, help='tendermint ip')
 args = args.parse_args()
 
 if arg.start == "install":
